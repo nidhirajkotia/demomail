@@ -30,10 +30,10 @@ class UsersController < ApplicationController
       if @user.save
 	UserMailer.registration_confirmation(@user).deliver_now
         format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
+        #format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
+       # format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
   end

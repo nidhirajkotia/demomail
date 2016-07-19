@@ -16,12 +16,14 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
-config.action_mailer.delivery_method = :smtp
+config.action_mailer.delivery_method = :mailgun
 
-config.action_mailer.smtp_settings={ 
-            address: "smtp.gmail.com",
+config.action_mailer.mailgun_settings={ 
+			api_key: 'key-b4495020352964171b3ea12a78a73d73',
+			domain: 'sandbox4089dd9b233b46a09f0ff58705012321.mailgun.org'
+            address: "smtp.mailgun.org",
             port: 587,
-            domain: "gmail.com",
+            domain: "sandbox4089dd9b233b46a09f0ff58705012321.mailgun.org",
             authentication: "plain",
             user_name: "testnidhi59",
             password: "admin@12345"

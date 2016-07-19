@@ -19,8 +19,8 @@ Rails.application.configure do
 config.action_mailer.delivery_method = :mailgun
 
 config.action_mailer.mailgun_settings={ 
-			api_key: 'key-b4495020352964171b3ea12a78a73d73',
-			domain: 'sandbox4089dd9b233b46a09f0ff58705012321.mailgun.org'
+			api_key: "key-b4495020352964171b3ea12a78a73d73",
+			domain: "sandbox4089dd9b233b46a09f0ff58705012321.mailgun.org,
             address: "smtp.mailgun.org",
             port: 587,
             domain: "sandbox4089dd9b233b46a09f0ff58705012321.mailgun.org",
